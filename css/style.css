@@ -198,8 +198,8 @@ section {
   }
 
 .card {
-    flex: 0 0 calc(33.333% - 200px);
-   width: 200px;
+    flex: 0 0 calc(33.333% - 250px);
+    width: 200px;
     padding: 0.5rem;
     margin-bottom: 2rem;
     border: 0;
@@ -613,81 +613,30 @@ span {
     color: #112e42;
 }
 
-@media screen and (min-width: 600px) {
+@media(max-width: 375px){
     .card {
-      flex: 0 0 40%;
-      width: 100%;
+        flex: 0 0 100%;
+        width: auto;
     }
-  }
-
-  @media screen and (max-width: 900px) {
-    .card {
-      flex: 0 0 20%;
-      width: 100%;
-    }
-  }
-  @media screen and (max-width: 1000px) {
-    .card {
-      flex: 0 0 25%;
-      width: 100%;
-    }
-  }
-
-  @media screen and (max-width: 1300px) {
-    .card {
-      flex: 0 0 15%;
-      width: 100%;
-    }
-  }
-
-  @media screen and (max-width: 1920px) {
-    .card {
-      flex: 0 0 15%;
-      width: 100%;
-    }
-  }
-
-@media screen and (min-width: 576px) {
-    .card {
-      width: 50%;
-    }
-  }
-  
-  @media screen and (min-width: 768px) {
-    .card {
-      width: 100%;
-    }
-  }
-  
-  @media screen and (min-width: 992px) {
-    .card {
-      width: 25%;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    .card {
-      width: 33.333%;
-    }
-  }
-  
-  @media screen and (min-width: 1600px) {
-    .card {
-      width: 16.666%;
-    }
-  }
+}
 
 @media (max-width: 1400px){
     html {
         font-size: 60%;
     }
+    .card {
+        flex: 0 0 100%;
+        width: auto;
+    }
 }
-
-
 
 @media (max-width: 1200px){
     html {
         font-size: 55%;
+    }
+    .card {
+        flex: 0 0 20%;
+        width: auto;
     }
 }
 
@@ -695,7 +644,10 @@ span {
     .home {
         background: var(--bg-color);
     }
-
+    .card {
+        flex: 0 0 20%;
+        width: auto;
+    }
 }
 
 @media (max-width: 991px) {
@@ -712,6 +664,12 @@ span {
     }
     footer {
         padding: 2rem 4%;
+    }
+
+    .card {
+        flex: 0 0 20%;
+        width: auto;
+
     }
 }
 
@@ -768,6 +726,11 @@ span {
         background-color: var(--bg-color);
         opacity: .6;
     }
+
+    .card {
+        flex: 0 0 100%;
+        width: auto;
+    }
 }
 
 @media (max-width: 520px) {
@@ -788,9 +751,24 @@ span {
         width: 38px;
         height: 38px;
     }
+
+    .card {
+        flex: 0 0 100%;
+        width: auto;
+    }
 }
 
 @media (max-width: 462px) {
+    .home {
+        justify-content: center;
+    }
+
+    .home-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .home-content h1 {
         font-size: 5.2rem;
     }
@@ -811,26 +789,11 @@ span {
     .home-content p {
         text-align: center;
     }
-}
 
-@media (max-width: 462px) {
-    .home {
-        justify-content: center;
-    }
-
-    .home-content {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .home-content h1 {
-        font-size: 5rem;
-    }
-
-    .home-content p {
-        text-align: center;
-    }
+    .card {
+        flex: 0 0 100%;
+        width: auto; 
+      }
 }
 
 @media (max-width:844px) {
@@ -844,6 +807,12 @@ span {
         text-align: center;
         justify-content: center;
     }
+
+    .card {
+        flex: 0 0 20%;
+        width: auto; 
+      }
+
 }
 
 @keyframes homeBgText {
